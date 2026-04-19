@@ -1,0 +1,17 @@
+[project]
+name = "solidity-deposit-contract"
+version = "0.1.0"
+description = "The deposit contract for Ethereum staking, written in Solidity"
+readme = "README.md"
+license = { text = "CC0-1.0" }
+requires-python = "==3.13.9"
+dependencies = [
+    "eth-tester[py-evm]==0.13.0b1",
+    "eth-utils==6.0.0",
+    "pytest==9.0.3",
+    "remerkleable==0.1.28",
+    "web3==7.15.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
